@@ -1,0 +1,74 @@
+.ad-section {
+    width: 450px;
+    height: 460px;
+    border: 1px solid #cfcfcf;
+    border-radius: 25px;
+    color: #cfcfcf;
+    margin: 100px 70px 0;
+    padding: 90px 50px 20px 50px;
+    background-color: #fafafa;
+}
+
+.text,
+.bottom-text {
+    color: #cfcfcf;
+    text-transform: uppercase;
+}
+
+.text {
+    font-size: 30px;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+.bottom-text {
+    font-size: 18px;
+}
+
+@media(min-width:1100px) and (max-width:1300px) {
+    .ad-section {
+        width: 400px;
+        height: 430px;
+        margin: 100px 45px 0;
+    }
+    .text {
+        font-size: 26px;
+        line-height: 2;
+    }
+}
+
+@media(min-width:900px) and (max-width:1100px) {
+    .ad-section {
+        width: 300px;
+        height: 340px;
+        margin: 100px 35px 0;
+    }
+    .text {
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 85px;
+    }
+    .bottom-text {
+        font-size: 15px;
+    }
+}
+
+@media(min-width:700px) and (max-width:900px) {
+    .ad-section {
+        width: 220px;
+        height: 255px;
+        margin: 55px 25px 0;
+        padding: 30px;
+    }
+    .text {
+        font-size: 15px;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 130px;
+    }
+    .bottom-text {
+        font-size: 11px;
+    }
+}

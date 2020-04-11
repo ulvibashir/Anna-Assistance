@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Mark Pro";
+}
+
+.header-container {
+    width: 100%;
+    padding: 15px 70px 20px;
+    box-shadow: 0 3px 15px 1px rgba(188, 188, 188, 0.25);
+    display: flex;
+}
+
+.profil {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 1%;
+}
+
+.profil-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.header-item {
+    text-align: left;
+    line-height: 1.5;
+    justify-content: center;
+    width: 20%;
+    display: flex;
+}
+
+.header-flex {
+    justify-content: end;
+}
+
+.item-info {
+    font-size: 14px;
+    color: #bcbcbc;
+}
+
+.item-info i {
+    margin-right: 8px;
+}
+
+.info {
+    color: #57a0ff;
+}
+
+.prof {
+    color: #ffaf57;
+}
+
+.certificate {
+    color: #ffd957;
+}
+
+.recommen {
+    color: #9aff57;
+}
+
+.contact {
+    color: #8857ff;
+}
+
+.item-text {
+    font-size: 20px;
+    color: #3d3d3d;
+}
+
+.line {
+    width: 1px;
+    height: 40px;
+    background-color: #bcbcbc;
+    margin-top: 5px;
+}
+
+@media(min-width:1100px) and (max-width:1300px) {
+    .header-container {
+        width: 100%;
+        padding: 13px 45px 18px;
+    }
+    .profil {
+        width: 42px;
+        height: 42px;
+    }
+    .profil-img {
+        width: 42px;
+        height: 42px;
+        border-radius: 100%;
+    }
+    .item-text {
+        font-size: 18px;
+    }
+    .item-info {
+        font-size: 13px;
+        color: #bcbcbc;
+    }
+    .line {
+        margin-top: 5px;
+        height: 35px;
+    }
+}
+
+@media(min-width:900px) and (max-width:1100px) {
+    .header-container {
+        padding: 15px 35px 16px;
+    }
+    .profil {
+        width: 40px;
+        height: 40px;
+    }
+    .profil-img {
+        width: 40px;
+        height: 40px;
+    }
+    .item-info i {
+        margin-right: 6px;
+    }
+    .item-info {
+        font-size: 11px;
+    }
+    .item-text {
+        font-size: 16px;
+    }
+    .line {
+        width: 1px;
+        height: 35px;
+        background-color: #bcbcbc;
+        margin-top: 1px;
+    }
+}
+
+@media(min-width:700px) and (max-width:900px) {
+    .header-container {
+        padding: 13px 25px;
+    }
+    .profil {
+        width: 30px;
+        height: 30px;
+    }
+    .profil-img {
+        width: 30px;
+        height: 30px;
+    }
+    .item-info i {
+        margin-right: 3px;
+    }
+    .item-info {
+        font-size: 9px;
+    }
+    .item-text {
+        font-size: 11px;
+    }
+    .line {
+        height: 25px;
+        margin-top: 2px;
+    }
+}

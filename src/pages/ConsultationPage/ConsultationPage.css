@@ -1,0 +1,381 @@
+.main-container {
+    padding: 70px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    
+}
+.inner-main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 100px;
+}
+
+.main-header-item {
+    margin-bottom: 90px;
+}
+
+.main-head {
+    font-size: 40px;
+    color: #3d3d3d;
+    font-weight: 600;
+}
+
+.info-text {
+    font-size: 16px;
+    color: #cfcfcf;
+}
+/* Consultation section */
+
+.consultation-item {
+    display: flex;
+    align-items: center;
+}
+
+.item-number {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 2px solid #cfcfcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #cfcfcf;
+    transition: all .3s ease;
+
+}
+
+.consultation-item-info {
+    width: 367px;
+    height: 60px;
+    border: 2px solid #cfcfcf;
+    border-radius: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    font-size: 18px;
+    transition: all .3s ease;
+
+    color: #cfcfcf;
+}
+
+.line-horizontal {
+    height: 1px;
+    width: 30px;
+    background-color: #cfcfcf;
+}
+
+.line-vertical {
+    height: 30px;
+    width: 1px;
+    background-color: #cfcfcf;
+    margin-left: 30px;
+}
+
+.done {
+    background-color: #00a284;
+    border: 2px solid #00a284;
+    color: #ffffff;
+        
+}
+
+.active-circle,
+.active {
+    /* border: 2px solid #00a284; */
+    border: none;
+    color: #00a284;
+    font-weight: 600;
+    
+    box-shadow:
+        -12px -12px 12px 0 rgba(255, 255, 255, .61), 
+        12px 12px 12px 0 rgba(0, 0, 0, .07);
+}
+
+.active {
+    /* border-bottom-right-radius: 0;
+    border-top-right-radius: 0; */
+    border-right: none;
+    position: relative;
+    width: 473px;
+    margin-right: 0;
+}
+
+.active::after,
+.active::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 2px solid #00A284;
+    position: relative;
+}
+
+.active::after {
+    border-bottom: none;
+    border-left: none;
+    border-top-right-radius: 30px;
+    left: 63px;
+    top: 49px;
+    visibility: hidden;
+}
+
+.active::before {
+    border-top: none;
+    border-left: none;
+    border-bottom-right-radius: 30px;
+    left: 326px;
+    bottom: 48.5px;
+    visibility: hidden;
+}
+
+.icon-active {
+    position: relative;
+    left: 145px;
+}
+
+.consultation-text {
+    width: 250px;
+    text-align: left;
+}
+.consultation-section {
+    width: 600px;
+}
+
+.form-right-container {
+    position: relative;
+    top: 7%;
+    height: 500px;
+    width: 670px;
+    background-color: #eeeeee;
+    /* border: 2px solid #00A284; */
+    /* position: absolute; */
+    /* left: 558px; */
+    border-radius: 30px;
+    transition: all .3s ease;
+    box-shadow:
+        -12px -12px 12px 0 rgba(255, 255, 255, .61),
+        12px 12px 12px 0 rgba(0, 0, 0, .07);
+}
+
+/* .icon-active::after {
+    content: " ";
+    width: 13px;
+    height: 124px;
+    background-color: white;
+    position: absolute;
+    top: -51px;
+    left: 71px;
+    border-radius: 95% 10% 10% 95% / 50% 50% 50% 58%;
+    z-index: 1;
+} */
+
+.active>.consultation-text {
+    position: absolute;
+}
+
+@media (min-width: 1100px) and (max-width: 1300px) {
+    .main-container {
+        padding: 60px 45px;
+    }
+    .main-head {
+        font-size: 37px;
+    }
+    .consultation-item-info {
+        width: 355px;
+        height: 55px;
+    }
+    .item-number {
+        width: 55px;
+        height: 55px;
+    }
+    .main-header-item {
+        margin-bottom: 85px;
+    }
+    .active::after {
+        border-bottom: none;
+        border-left: none;
+        border-top-right-radius: 30px;
+        left: 64px;
+        top: 46px;
+    }
+    .active::before {
+        border-top: none;
+        border-left: none;
+        border-bottom-right-radius: 30px;
+        left: 315px;
+        bottom: 46.5px;
+    }
+    .form-right-container {
+        position: absolute;
+        left: 517px;
+    }
+    .icon-active::after {
+        left: 66px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1100px) {
+    .main-head {
+        font-size: 33px;
+    }
+    .info-text {
+        font-size: 14px;
+    }
+    .main-container {
+        padding: 40px 35px;
+    }
+    .main-header-item {
+        margin-bottom: 70px;
+    }
+    .item-number {
+        width: 45px;
+        height: 45px;
+    }
+    .consultation-item-info {
+        width: 230px;
+        height: 45px;
+        padding: 0 20px;
+        font-size: 15px;
+    }
+    .line-horizontal {
+        height: 1px;
+        width: 25px;
+    }
+    .line-vertical {
+        height: 25px;
+        width: 1px;
+        background-color: #cfcfcf;
+        margin-left: 22px;
+    }
+    .active {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        border-right: none;
+        position: relative;
+    }
+    .active::after {
+        border-bottom: none;
+        border-left: none;
+        border-top-right-radius: 30px;
+        left: 60px;
+        top: 41.5px;
+    }
+    .active::before {
+        border-top: none;
+        border-left: none;
+        border-bottom-right-radius: 30px;
+        left: 206px;
+        bottom: 41.5px;
+    }
+    .icon-active {
+        position: relative;
+        left: 90px;
+    }
+    .form-right-container {
+        height: 255px;
+        width: 433px;
+        position: absolute;
+        left: 373px;
+        border-radius: 50px;
+    }
+    .icon-active::after {
+        content: " ";
+        width: 13px;
+        height: 118px;
+        background-color: white;
+        position: absolute;
+        top: -50px;
+        left: 64px;
+        border-radius: 95% 10% 10% 95% / 50% 50% 50% 58%;
+        z-index: 1;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px) {
+    .main-container {
+        padding: 25px;
+    }
+    .main-head {
+        font-size: 25px;
+    }
+    .info-text {
+        font-size: 10px;
+    }
+    .main-header-item {
+        margin-bottom: 40px;
+    }
+    .item-number {
+        width: 35px;
+        height: 35px;
+    }
+    .consultation-item-info {
+        width: 200px;
+        height: 30px;
+        padding: 0px 20px;
+        font-size: 12px;
+    }
+    .line-horizontal {
+        height: 1px;
+        width: 20px;
+    }
+    .line-vertical {
+        height: 20px;
+        width: 1px;
+        margin-left: 17px;
+    }
+    .icon-active {
+        position: relative;
+        left: 75px;
+    }
+    .active {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        border-right: none;
+        position: relative;
+    }
+    .active::after,
+    .active::before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        border: 2px solid #00A284;
+        position: relative;
+    }
+    .active::after {
+        border-bottom: none;
+        border-left: none;
+        border-top-right-radius: 30px;
+        left: 51px;
+        top: 28.5px;
+    }
+    .active::before {
+        border-top: none;
+        border-left: none;
+        border-bottom-right-radius: 30px;
+        left: 177px;
+        bottom: 29px;
+    }
+    .form-right-container {
+        height: 170px;
+        width: 325px;
+        border: 2px solid #00A284;
+        position: absolute;
+        left: 308px;
+        border-radius: 50px;
+    }
+    .icon-active::after {
+        content: " ";
+        width: 13px;
+        height: 76px;
+        background-color: #ffffff;
+        position: absolute;
+        top: -32px;
+        left: 52px;
+        border-radius: 95% 10% 10% 95% / 50% 50% 50% 58%;
+        z-index: 1;
+    }
+}
